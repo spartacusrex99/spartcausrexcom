@@ -2,16 +2,16 @@
 /**
  * Write the header
  */
-function writeHeader(){
+function writeHeader(baseurl){
 	
 	var gap = "&nbsp;&nbsp;&nbsp;";
 	
 	document.write(""
 		+"<center><br><h1>Spartacus Rex</h1>"
-		+"<button class='solobutton' onclick='location.href=\"index.html\";'>Home</button>"+gap
-		+"<button class='solobutton' onclick='location.href=\"runanode.html\";'>Run a node</button>"+gap
-		+"<button class='solobutton' onclick='location.href=\"downloads.html\";'>Downloads</button>"+gap
-		//+"<button class='solobutton' onclick='location.href=\"blog.html\";'>Blog</button>"+gap
+		+"<button class='solobutton' onclick='location.href=\""+baseurl+"index.html\";'>Home</button>"+gap
+		+"<button class='solobutton' onclick='location.href=\""+baseurl+"runanode.html\";'>Run a node</button>"+gap
+		+"<button class='solobutton' onclick='location.href=\""+baseurl+"downloads.html\";'>Downloads</button>"+gap
+		+"<button class='solobutton' onclick='location.href=\""+baseurl+"blog.html\";'>Blog</button>"+gap
 		+"<br><br>"
 		+"");
 } 
