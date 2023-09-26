@@ -11,7 +11,7 @@ function writeHeader(){
 		+"<button class='solobutton' onclick='location.href=\"index.html\";'>Home</button>"+gap
 		+"<button class='solobutton' onclick='location.href=\"runanode.html\";'>Run a node</button>"+gap
 		+"<button class='solobutton' onclick='location.href=\"downloads.html\";'>Downloads</button>"+gap
-		+"<button class='solobutton' onclick='location.href=\"blog.html\";'>Blog</button>"+gap
+		//+"<button class='solobutton' onclick='location.href=\"blog.html\";'>Blog</button>"+gap
 		+"<br><br>"
 		+"");
 } 
