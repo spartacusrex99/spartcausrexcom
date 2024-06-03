@@ -1,0 +1,110 @@
+<html>
+
+<head>
+	<title>Spartacus Rex</title>
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="buttons.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JS Libs -->
+	<script type="text/javascript" src="sparx.js"></script>
+	
+</head>
+
+<body>
+
+<!-- Header -->  
+<script type="text/javascript">writeHeader("");</script>
+	
+<!--  Main Body -->
+
+<div class="maindiv">
+When you first run Minima the first thing you need is to add some peers..<br>
+<br>
+You can get this list from any user on the network..<br>
+<br>
+I publish a list which you can copy directly into the app..<br>
+<br>
+<b>https://spartacusrex.com/minimapeers.txt</b>
+</div>
+
+	<div class="maindiv">
+	<h3>Command Line</h3>
+	At it's core Minima is a Java application.<br>
+	<br>
+	So on a server or cli the easiest way to run Minima is :<br>
+	<br>
+	<code>java -jar minima.jar</code><br>
+	<br>
+	If you are on an external server <b>open port 9001</b> on your machine - the default Minima port - to get the best connection to the network.<br>
+	<br>
+	If you want to run this on a server that you log into via ssh you can use <b>tmux</b> so that it continues to run once you log out.<br>
+	<br>
+	Minima uses a powerful and versatile system to run locally hosted web applications - called MiniDAPPs.<br>
+	<br>
+	Fast version - to start a node (default port and data folder) with MDS enabled which you can access from https://127.0.0.1:9003 and a Minima node IP to auto-connect to from CLI use :<br>
+	<br>
+	<code>java -jar minima.jar -mdsenable -mdspassword YOUR_MDS_PASSWORD -p2pnodes https://spartacusrex.com/minimapeers.txt</code><br>
+	<br> 
+	For more information on startup params and the MDS (MiniDAPP System) checkout the <a target="_blank" href="https://github.com/minima-global/Minima">Github README</a><br>
+	</div>
+	
+	<div class="maindiv">
+	<h3>Android</h3>
+	The next simplest way is to install and run the Android APK.<br>
+	<br>
+	This is available on Google Playstore..
+	
+	<a href="https://play.google.com/store/apps/details?id=com.minima.android" target="_blank">Minima</a>
+	<br>
+	<a href='https://play.google.com/store/apps/details?id=com.minima.android' target="_blank"><img width=200 alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+	<br>
+	I also provide a signed APK that you can just download and install in the <a href="downloads.html">Downloads</a> section.<br>
+	</div>
+	
+	<div class="maindiv">
+	<h3>Desktop</h3>
+	For Desktop users Minima can be launched from a JNLP file.. The Java Network Launch Protocol.<br>
+	<br>
+	First install Open Web Start - the new updated version of Java Web Start<br>
+	<br>
+	<a href='https://openwebstart.com/download/' target='_blank' >Download Open Web Start</a><br>
+	<br>
+	Download the Minima JNLP file.. and open / double-click it.. this will install as an application and update automagically when you start it in future..<br>
+	<br>
+	<!--  <a href='./javaws/minima.jnlp'>Minima JNLP</a><br> -->
+	<a href='./javaws/minima.jnlpx'><img width=100 src="jws-launch-button.png"></a><br>
+	<br>
+	<h3>Windows</h3>
+	On windows the procedure should work almost seamlessly. The JNLP will be opened automatically by Open Web Start.<br>
+	<br>
+	If NOT - right click on the file and choose 'Open With' and select Open Web Start.
+	<br>
+	<h3>Mac</h3>
+	If you install OpenWebStart FOR ALL USERS, which requires admin rights and will ask for a password, the file association works so that when you click the JNLP file it opens it correctly with OpenWebStart and not Java.<br>
+	<br>
+	If you install just for you - the file association does not seem to work.. so you will need to Command+Right Click the JNLP and choose OpenWebStart to open the file..<br>
+	<br>
+	If you choose 'Other' - you can then set it as the default option so the next time it does it automatically..<br>
+	</div>
+	
+	<div class="maindiv">
+	<h3>Docker</h3>
+	There is also a nice docker image that you can use.<br>
+	<br>
+	<code>docker run -d -e minima_mdspassword=INSERTYOURPASSWORD -e minima_desktop=true -v ~/minimadocker:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima minimaglobal/minima:latest</code><br>
+	<br>
+	Then you log into the MDS system via https://127.0.0.1:9003/<br>
+	</div>
+	
+	<div class="maindiv">
+	And finally - for more information about how to run a node check out the extensive docs on minima.global<br>
+	<br>
+	<a href="https://www.minima.global/run-a-node" target="_blank">https://www.minima.global/run-a-node</a>
+	</div>
+<!-- Footer -->  
+<script type="text/javascript">writeFooter();</script>
+	
+</body>
+</html>
