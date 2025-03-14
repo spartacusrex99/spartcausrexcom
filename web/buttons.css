@@ -1,10 +1,11 @@
 .solobutton {
+	min-width:100;
     background-color: #eee;
     border: 0.5px solid #EDEDED;
   	border-radius: 8px;
   	padding: 8px 8px;
   	font-family: Manrope;
-  	font-size: 14px;
+  	font-size: 18px;
 }
 .solobutton-edit {
 	font-family: Manrope;
