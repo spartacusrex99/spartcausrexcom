@@ -1,0 +1,23 @@
+{
+	"name":"Rex Mundi",
+	"description":"A collection of MiniDAPPs",
+	"banner":"https://",
+	"icon":"https://",
+	"version":"1.0",
+	"manifest_version":2,
+	"dapps":[
+		{
+			"file":"https://spartacusrex.com/dappstore/minifs/minifs-1.4.4.mds.zip",
+			"icon":"https://spartacusrex.com/dappstore/minifs/minifs.png",
+			"name":"MiniFS",
+			"date":"March 21, 2025",
+			"description":"Onchain file store system",
+			"repository_url":"(optional)https://",
+			"version":"1.0.0",
+			"about":"...",
+			"screenshots":[],
+			"release_notes":"#markdown",
+			"history":null
+		}
+	]
+}
