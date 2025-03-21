@@ -2,7 +2,7 @@
 	"name":"Rex Mundi",
 	"description":"A collection of MiniDAPPs",
 	"banner":"https://spartacusrex.com/dappstore/balost.jpg",
-	"icon":"https://spartacusrex.com/dappstore/berserkyo_small.png",
+	"icon":"https://spartacusrex.com/dappstore/berserkyo256.png",
 	"version":"1.0",
 	"manifest_version":2,
 	"dapps":[
