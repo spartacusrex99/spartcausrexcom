@@ -7,13 +7,13 @@
 	"manifest_version":2,
 	"dapps":[
 		{
-			"file":"https://spartacusrex.com/dappstore/chainmail/chainmail-1.12.5.mds.zip",
+			"file":"https://spartacusrex.com/dappstore/chainmail/chainmail-1.13.0.mds.zip",
 			"icon":"https://spartacusrex.com/dappstore/chainmail/chainmail.webp",
 			"name":"ChainMail",
 			"date":"March 21, 2025",
 			"description":"Secure encrypted on chasin",
 			"repository_url":"(optional)https://",
-			"version":"1.12.5",
+			"version":"1.13.0",
 			"about":"...",
 			"screenshots":[],
 			"release_notes":"#markdown",
