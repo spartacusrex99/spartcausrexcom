@@ -51,6 +51,16 @@ I publish a list which you can copy directly into the app..<br>
 	</div>
 	
 	<div class="maindiv">
+	<h3>Online Wallet</h3>
+	I run a public facing <b>non-custodial</b> wallet which simply allows you to send and receive Minima and tokens!<br>
+	<br>
+	The password / seed phrase you use to login can be used on ANY public wallet.<br>
+	<br>
+	<a href='https://spartacusrex.com:8888/public/' target='_blank' >Open Public Wallet</a><br>
+	<br>
+	</div>
+	
+	<div class="maindiv">
 	<h3>Android</h3>
 	The next simplest way is to install and run the Android APK.<br>
 	<br>
@@ -74,19 +84,9 @@ I publish a list which you can copy directly into the app..<br>
 	Download the Minima JNLP file.. and open / double-click it.. this will install as an application and update automagically when you start it in future..<br>
 	<br>
 	<!--  <a href='./javaws/minima.jnlp'>Minima JNLP</a><br> -->
-	<a href='./javaws/minima.jnlpx' download><img width=100 src="jws-launch-button.png"></a><br>
+	<a href='./javaws/minima.jnlpx'><img width=100 src="jws-launch-button.png"></a><br>
 	<br>
-	<h3>Windows</h3>
-	On windows the procedure should work almost seamlessly. The JNLP will be opened automatically by Open Web Start.<br>
-	<br>
-	If NOT - right click on the file and choose 'Open With' and select Open Web Start.
-	<br>
-	<h3>Mac</h3>
-	If you install OpenWebStart FOR ALL USERS, which requires admin rights and will ask for a password, the file association works so that when you click the JNLP file it opens it correctly with OpenWebStart and not Java.<br>
-	<br>
-	If you install just for you - the file association does not seem to work.. so you will need to Command+Right Click the JNLP and choose OpenWebStart to open the file..<br>
-	<br>
-	If you choose 'Other' - you can then set it as the default option so the next time it does it automatically..<br>
+	This will work on Windows / Mac and Linux..
 	</div>
 	
 	<div class="maindiv">
@@ -96,6 +96,17 @@ I publish a list which you can copy directly into the app..<br>
 	<code>docker run -d -e minima_mdspassword=INSERTYOURPASSWORD -e minima_desktop=true -v ~/minimadocker:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima minimaglobal/minima:latest</code><br>
 	<br>
 	Then you log into the MDS system via https://127.0.0.1:9003/<br>
+	</div>
+	
+	<div class="maindiv">
+	<h3>MegaNode : Minima + MEG + MegaMMR + MySQL</h3>
+	There is a multi-container docker yaml that you can use to easily spin up a complete MegaMMR node..<br>
+	<br>
+	<a href="https://github.com/minima-global/meganode">https://github.com/minima-global/meganode</a><br>
+	<br>
+	Full instructions to set it up are provided..<br>
+	<br>
+	This gives you the most robust system that can handle any number of Users.. Exchanges use this.
 	</div>
 	
 	<div class="maindiv">
