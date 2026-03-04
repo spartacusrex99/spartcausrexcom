@@ -1,57 +1,74 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Spartacus Rex</title>
-	
-	<!-- Style Sheets -->
-	<link rel="stylesheet" href="buttons.css">
-	<link rel="stylesheet" href="style.css">
-
-	<!-- JS Libs -->
-	<script type="text/javascript" src="sparx.js"></script>
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - Spartacus Rex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        .maindiv {
+            margin-bottom: 1.5rem;
+        }
+    </style>
 </head>
-
 <body>
+    <nav>
+        <a href="index.html" class="logo">Spartacus Rex</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="run-a-node.html">Run a Node</a>
+            <a href="downloads.html" class="active">Downloads</a>
+            <a href="public.html">Public</a>
+        </div>
+    </nav>
+    
+    <main>
+        <article class="blog-content">
+            <h1>Downloads</h1>
+            
+            <div class="maindiv">
+                For the very latest check out the <a target="_blank" href="https://github.com/minima-global/Minima">github</a><br>
+                <br>
+                You can download the latest jar here: <a href="./download/minima-1.0.46.jar" download>minima-1.0.46.jar</a><br>
+                <br>
+                Or the latest signed APK here: <a href="./download/minima-1.0.46.apk" download>minima-1.0.46.apk</a>
+            </div>
 
-<!-- Header -->  
-<script type="text/javascript">writeHeader("");</script>
-	
-<!--  Main Body -->
+            <div class="maindiv">
+                I run an archive server and make a Complete *.raw.dat archive file every 24 hours.<br>
+                <br>
+                You can download them from my <a href="./archive" target="_blank">Minima Archives Folder</a>
+            </div>
 
-	<div class="maindiv">
-	For the very latest check out the <a target="_blank" href="https://github.com/minima-global/Minima">github</a>.. otherwise<br>
-	<br>
-	You can download the latest jar here.. <a href="./download/minima-1.0.46.jar" download>minima-1.0.46.jar</a><br>
-	<br>
-	Or the latest signed APK here.. <a href="./download/minima-1.0.46.apk" download>minima-1.0.46.apk</a><br>
-	<br>
-	I run an archive server and make a Complete *.raw.dat archive file every 24 hours..<br>
-	<br> 
-	You can download them from my <a href="./archive" target='_blank' >Minima Archives Folder</a><br>
-	<br> 
-	I also run a MEGA MMR node and make a megammr backup file every 24 hours..<br>
-	<br>
-	You can download them from my <a href="./megaarchive" target='_blank' >Minima MegaMMR Backups</a><br>
-	<br> 
-	MEG - <b>Minima Enterprise Gateway</b> - is a java application that you run alongside Minima<br> 
-	<br> 
-	It allows integration of Minima functionality into existing infrastructure using simple HTTP API Calls..<br>  
-	<br> 
-	Download MEG here <a href="./download/minima-meg-2.6.5.jar" download>MEG Server</a><br>
-	<br> 
-	And of course - the <a href="minima_whitepaper.pdf" download>Minima White Paper</a><br>
-	<br> 
-	I also host a Dapp Store of a few simple MiniDAPPs I work on<br>
-	<br> 
-	Simply add <b>https://spartacusrex.com/dappstore/dapps.json</b> to the DappStore MiniDAPP<br>
-	<br>
-	Enjoy!<br>
-	<br>
-	</div>
-	
-<!-- Footer -->  
-<script type="text/javascript">writeFooter();</script>
-	
+            <div class="maindiv">
+                I also run a MEGA MMR node and make a megammr backup file every 24 hours.<br>
+                <br>
+                You can download them from my <a href="./megaarchive" target="_blank">Minima MegaMMR Backups</a>
+            </div>
+
+            <div class="maindiv">
+                <h3>MEG - Minima Enterprise Gateway</h3>
+                MEG is a Java application that you run alongside Minima.<br>
+                <br>
+                It allows integration of Minima functionality into existing infrastructure using simple HTTP API Calls.<br>
+                <br>
+                Download MEG here: <a href="./download/minima-meg-2.6.5.jar" download>MEG Server</a>
+            </div>
+
+            <div class="maindiv">
+                And of course - the <a href="./assets/minima_whitepaper.pdf" download>Minima White Paper</a>
+            </div>
+
+            <div class="maindiv">
+                I also host a Dapp Store of a few simple MiniDAPPs I work on.<br>
+                <br>
+                Simply add <b>https://spartacusrex.com/dappstore/dapps.json</b> to the DappStore MiniDAPP<br>
+                <br>
+                Enjoy!
+            </div>
+        </article>
+    </main>
 </body>
 </html>

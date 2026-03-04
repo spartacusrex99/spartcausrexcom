@@ -1,53 +1,135 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Spartacus Rex</title>
-	
-	<!-- Style Sheets -->
-	<link rel="stylesheet" href="buttons.css">
-	<link rel="stylesheet" href="style.css">
-
-	<!-- JS Libs -->
-	<script type="text/javascript" src="sparx.js"></script>
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Spartacus Rex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
 </head>
-
 <body>
-
-<!-- Header -->  
-<script type="text/javascript">writeHeader("");</script>
-	
-<!--  Main Body -->
-<br>
-Here is a list of blogs I wrote about Minima and Crypto..<br>
-<br>
-
-	<div class="maindiv">
-		
-		<a href="./blogs/lovestory.html">A Love Story</a><br>
-		<br>
-		<a href="./blogs/twocities.html">A Tale of Two Cities</a><br>
-		<br>
-		<a href="./blogs/money.html">Money Makes The World Go Round</a><br>
-		<br>
-		<a href="./blogs/duality.html">The Duality Rant</a><br>
-		<br>
-		<a href="./blogs/sixty.html">Minima In Sixty Seconds</a><br>
-		<br>
-		<a href="./blogs/ergo.html">Ergo Minima</a><br>
-		<br>
-		<a href="./blogs/metacoin.html">The Metacoin</a><br>
-		<br>
-		<a href="./blogs/codefever.html">Code Fever 19</a><br>
-		<br>
-		<a href="./blogs/freedom.html">Freedom</a><br>
-		<br>
-		<a href="./blogs/power.html">Power</a><br>
-			
-	</div>
-	
-<!-- Footer -->  
-<script type="text/javascript">writeFooter();</script>
-	
+    <nav>
+        <a href="index.html" class="logo">Spartacus Rex</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="run-a-node.html">Run a Node</a>
+            <a href="downloads.html">Downloads</a>
+            <a href="public.html">Public</a>
+        </div>
+    </nav>
+    
+    <main>
+        <br>
+        <article class="blog-post">
+            <a href="blogs/lovestory.html">
+                <img src="images/lovestory.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>A Love Story</h2>
+                <p class="excerpt">Hello. I'm Spartacus Rex. The guy who wrote Minima. I've been programming since the ZX Spectrum 48K at the ripe old age of nine...</p>
+                <a href="blogs/lovestory.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/twocities.html">
+                <img src="images/twocities.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>A Tale of Two Cities</h2>
+                <p class="excerpt">Once upon a time in Cryptoland, there were two cities... Bitcoin and Minima. Which city is more secure?</p>
+                <a href="blogs/twocities.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/money.html">
+                <img src="images/money.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>Money Makes The World Go Round</h2>
+                <p class="excerpt">There's a fundamental difference between BTC and ETH. A variable that almost defines the entirety of the argument between the two schools...</p>
+                <a href="blogs/money.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/duality.html">
+                <img src="images/duality.png" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>The Duality Rant</h2>
+                <p class="excerpt">INFORMATION AND VALUE. We need both. Digital, not Physical. Global, not Local. The New Paradigm vs the Old...</p>
+                <a href="blogs/duality.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/sixty.html">
+                <img src="images/sixty.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>Minima In Sixty Seconds</h2>
+                <p class="excerpt">Whatever anyone has told you... The only true and indisputable value proposition of Blockchains is anti-censorship...</p>
+                <a href="blogs/sixty.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/ergo.html">
+                <img src="images/ergo.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>Ergo Minima</h2>
+                <p class="excerpt">Currently, big bad beautiful Bitcoin uses 1% of the worlds' power... and processes 10-15 tps... on-chain...</p>
+                <a href="blogs/ergo.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/metacoin.html">
+                <img src="images/metacoin.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>The Metacoin</h2>
+                <p class="excerpt">A crypto-space tale. There is a comic. Written by the genius Alejandro Jodorowsky... Bitcoin, the current MetaBaron...</p>
+                <a href="blogs/metacoin.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/codefever.html">
+                <img src="images/codefever.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>Code Fever 19</h2>
+                <p class="excerpt">I got it. I got it bad. I code. I code a lot. This lockdown has only made it worse. Much worse...</p>
+                <a href="blogs/codefever.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/freedom.html">
+                <img src="images/freedom.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>Freedom</h2>
+                <p class="excerpt">What in the name of Satoshi am I doing here - staring at this computer screen hour after hour...?</p>
+                <a href="blogs/freedom.html" class="read-more">Read more</a>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <a href="blogs/power.html">
+                <img src="images/power.jpg" alt="" class="thumbnail">
+            </a>
+            <div class="blog-post-content">
+                <h2>Power</h2>
+                <p class="excerpt">Let's talk about something REALLY cool. Let's talk about MiniDAPPs. Let's talk about Power...</p>
+                <a href="blogs/power.html" class="read-more">Read more</a>
+            </div>
+        </article>
+    </main>
 </body>
 </html>

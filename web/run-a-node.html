@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run a Node - Spartacus Rex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        .maindiv {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Spartacus Rex</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="run-a-node.html" class="active">Run a Node</a>
+            <a href="downloads.html">Downloads</a>
+            <a href="public.html">Public</a>
+        </div>
+    </nav>
+    
+    <main>
+        <article class="blog-content">
+            <h1>Run a Node</h1>
+            
+            <div class="maindiv">
+                When you first run Minima the first thing you need is to add some peers.<br>
+                <br>
+                You can get this list from any user on the network.<br>
+                <br>
+                I publish a list which you can copy directly into the app:<br>
+                <br>
+                <a href="https://spartacusrex.com/minimapeers.txt" target="_blank">https://spartacusrex.com/minimapeers.txt</a>
+            </div>
+
+            <div class="maindiv">
+                <h3>Command Line</h3>
+                At its core Minima is a Java application.<br>
+                <br>
+                So on a server or CLI the easiest way to run Minima is:<br>
+                <br>
+                <code>java -jar minima.jar</code><br>
+                <br>
+                If you are on an external server <b>open port 9001</b> on your machine - the default Minima port - to get the best connection to the network.<br>
+                <br>
+                If you want to run this on a server that you log into via ssh you can use <b>tmux</b> so that it continues to run once you log out.<br>
+                <br>
+                Minima uses a powerful and versatile system to run locally hosted web applications - called MiniDAPPs.<br>
+                <br>
+                Fast version - to start a node (default port and data folder) with MDS enabled which you can access from https://127.0.0.1:9003 and a Minima node IP to auto-connect to from CLI use:<br>
+                <br>
+                <code>java -jar minima.jar -mdsenable -mdspassword YOUR_MDS_PASSWORD -p2pnodes https://spartacusrex.com/minimapeers.txt</code><br>
+                <br>
+                For more information on startup params and the MDS (MiniDAPP System) checkout the <a target="_blank" href="https://github.com/minima-global/Minima">Github README</a>.
+            </div>
+            
+            <div class="maindiv">
+                <h3>Online Wallet</h3>
+                I run a public facing <b>non-custodial</b> wallet which simply allows you to send and receive Minima and tokens!<br>
+                <br>
+                The password / seed phrase you use to login can be used on ANY public wallet.<br>
+                <br>
+                <a href="https://spartacusrex.com:8888/public/" target="_blank">Open Public Wallet</a><br>
+            </div>
+            
+            <div class="maindiv">
+                <h3>Android</h3>
+                The next simplest way is to install and run the Android APK.<br>
+                <br>
+                This is available on Google Playstore:<br>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=com.minima.android" target="_blank">Minima on Google Play</a><br>
+                <br>
+                I also provide a signed APK that you can just download and install in the <a href="downloads.html">Downloads</a> section.
+            </div>
+            
+            <div class="maindiv">
+                <h3>Desktop</h3>
+                For Desktop users Minima can be launched from a JNLP file - The Java Network Launch Protocol.<br>
+                <br>
+                First install Open Web Start - the new updated version of Java Web Start:<br>
+                <br>
+                <a href="https://openwebstart.com/download/" target="_blank">Download Open Web Start</a><br>
+                <br>
+                Download the Minima JNLP file and open / double-click it - this will install as an application and update automagically when you start it in future.<br>
+                <br>
+				<a href='./javaws/minima.jnlpx' download><img width=100 src="jws-launch-button.png"></a>
+				
+				This will work on Windows, Mac and Linux.
+            </div>
+            
+            <div class="maindiv">
+                <h3>Docker</h3>
+                There is also a nice Docker image that you can use:<br>
+                <br>
+                <code>docker run -d -e minima_mdspassword=INSERTYOURPASSWORD -e minima_desktop=true -v ~/minimadocker:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima minimaglobal/minima:latest</code><br>
+                <br>
+                Then you log into the MDS system via <a href="https://127.0.0.1:9003/" target="_blank">https://127.0.0.1:9003/</a>
+            </div>
+            
+            <div class="maindiv">
+                <h3>MegaNode: Minima + MEG + MegaMMR + MySQL</h3>
+                There is a multi-container docker yaml that you can use to easily spin up a complete MegaMMR node:<br>
+                <br>
+                <a href="https://github.com/minima-global/meganode" target="_blank">https://github.com/minima-global/meganode</a><br>
+                <br>
+                Full instructions to set it up are provided.<br>
+                <br>
+                This gives you the most robust system that can handle any number of users - Exchanges use this.
+            </div>
+            
+            <div class="maindiv">
+                And finally - for more information about how to run a node check out the extensive docs on minima.global:<br>
+                <br>
+                <a href="https://www.minima.global/run-a-node" target="_blank">https://www.minima.global/run-a-node</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
